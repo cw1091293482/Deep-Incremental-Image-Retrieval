@@ -11,15 +11,15 @@ Before creating a new environment via the file environment.yml, just use your ow
 In folder *data*, two datasets are named as *CUB_200_2011* and *Stanforddog120*, respectively.  
 Under each folder for each dataset, there are train.txt, test.txt, and two sub-folders to include training images and test images,  
 When you have download [UCSD Birds-200](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) and [Stanford-dogs-120](http://vision.stanford.edu/aditya86/ImageNetDogs/),  
-just put ***all categories and images*** in *train* folder and *test* folder. The training set and testing set have been split via *train.txt* and *test.txt*.  
+just put ***all categories and images*** in *./train/* folder and *./test/* folder. The training set and testing set have been split via *./train.txt* and *./test.txt*.  
 See the PNG in each folder.
 
 # Backbone CNN
-Please specify the CNN *model_path* in .*models/BN_Inception.py*:
+Please specify the CNN *model_path* in .*./models/BN_Inception.py*:
 
 model_path = 'Path to Model/models/bn_inception-52deb4733.pth'
 
-Download the model from [bn_inception-52deb4733](https://drive.google.com/file/d/1qDBfquYrfM9Msl2q57jxzl9w0y7qwnn0/view?usp=sharing), then put it into the folder *models*.
+Download the model from [bn_inception-52deb4733](https://drive.google.com/file/d/1qDBfquYrfM9Msl2q57jxzl9w0y7qwnn0/view?usp=sharing), then put it into the folder *./models*.
 
 # Specify path:
 

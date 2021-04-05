@@ -33,7 +33,7 @@ Dir_path = 'Path of Project/Deep_Incremental_Retrieval/'
 
 (1) in script *train.py,* set --_Incremental_flag_ to *False*  
 (2) set --*resume* to *None*.
-(3) in script ./Dataset/CUB200.py  
+(3) in script ./Dataset/CUB200.py,  
  Comment and uncomment:
 
         labels_select = [labels[i] for i in range(len(labels)) if labels[i] <= 99] # 61, 71, 81, 91, 101 for flower-102

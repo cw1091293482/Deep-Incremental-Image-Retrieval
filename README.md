@@ -72,7 +72,7 @@ at once, there is no feature estimation involved, so in the *train.py*: *sequent
 
 If added in different groups successively, the second stage is *repeated* until all remaining classes
 are added. Unfortunately, in this case, I didn't make it train in an end-to-end way.
-Therefore, when you are using the feature estimation method, the hyper-parameter *accuracy change* needs to be calculated and added manually to
+Therefore, when you are using the feature estimation method, the hyper-parameter *accuracy change* needs to be calculated and added *manually* to
 the following code:
 
 random_samp = np.random.uniform(***low=-0.0442811***, ***high=0.2230079***, size=(embed_feat_frozen.shape[0], embed_feat_frozen.shape[1]))

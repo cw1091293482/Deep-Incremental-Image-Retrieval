@@ -5,7 +5,7 @@ A Pytorch source code for ***Feature Estimations based Correlation Distillation 
 # Dependency:
 Pytorch=1.4.0  
 Before creating a new environment via the file environment.yml, just use your own pytorch environment to check if this code can be run.
-**
+
 # About datasets
 
 In folder *data*, two datasets are named as *CUB_200_2011* and *Stanforddog120*, respectively.  

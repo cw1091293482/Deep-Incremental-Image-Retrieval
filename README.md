@@ -4,7 +4,6 @@ A Pytorch source code for ***Feature Estimations based Correlation Distillation 
 *IEEE Transactions on Multimedia*.
 # Dependency:
 Pytorch=1.4.0  
-Before creating a new environment via the file environment.yml, just use your own pytorch environment to check if this code can be run.
 
 # About datasets
 

@@ -133,4 +133,3 @@ dependencies:
     - visdom==0.1.8.9
     - websocket-client==0.57.0
     - werkzeug==1.0.1
-prefix: /home/fandral/miniconda3/envs/pytorch36

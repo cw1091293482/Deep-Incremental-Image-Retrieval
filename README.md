@@ -42,8 +42,8 @@ Dir_path = 'Path of Project/Deep_Incremental_Retrieval/'
         #labels_select = [labels[i] for i in range(len(labels)) if labels[i] > 99 and labels[i] <= 199] # 59,74,89,104,119 dog
         #images = [images[i] for i in range(len(labels)) if labels[i] > 99 and labels[i] <= 199] # 99, 124, 149, 174, 199 cub 
 
-Note that *99* is for the first 100 classes on UCSD Birds-200, and 59 is for the first 60 classes on Stanford-Dogs-120  
-For *Standford_dog.py*, there is no any changes.  
+Note that *99* is for the first 100 classes on UCSD Birds-200, and *59* is for the first 60 classes on Stanford-Dogs-120  
+For the script *Standford_dog.py*, there is no any changes.  
 In this stage, an initial model will be trained and saved, according the number of training epochs.  
 For example, when training on the first *100* classes on the Caltech-UCSD Birds-200 dataset
 

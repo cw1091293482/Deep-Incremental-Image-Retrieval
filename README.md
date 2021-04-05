@@ -56,7 +56,7 @@ This saved model will be used as the *teacher* model, and have its parameters fi
 In this stage, the teacher model is loaded via --*resume* in script *train.py*
 (Keep consistent the model directory)
 Also:  
-set --*Incremental_flag* to *True*  
+set --*Incremental_flag* to *True*,  
 Comment and uncomment:  
 
         #labels_select = [labels[i] for i in range(len(labels)) if labels[i] <= 99] # 61, 71, 81, 91, 101 for flower-102

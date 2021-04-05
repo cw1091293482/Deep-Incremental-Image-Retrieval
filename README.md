@@ -1,16 +1,39 @@
 
 # Deep-Incremental-Image-Retrieval
-A Pytorch source code for ***Feature Estimations based Correlation Distillation for Incremental Image Retrieval*** published on 
+A Pytorch source code for ***Feature Estimations based Correlation Distillation for Incremental Image Retrieval*** published on
 *IEEE Transactions on Multimedia*.
 # Dependency:
 Pytorch=1.4.0  
-Before creating a new environment via the file *environment.yml*, just use your own pytorch environment to run this code.
+Before creating a new environment via the file environment.yml, just use your own pytorch environment to run this code.
+**
+# About datasets
+
+In folder *data*, two datasets are named as *CUB_200_2011* and *Stanforddog120*, respectively.  
+Under each folder for each dataset, there are train.txt, test.txt, and two sub-folders to include training images and test images,  
+When you have download [UCSD Birds-200](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) and [Stanford-dogs-120](http://vision.stanford.edu/aditya86/ImageNetDogs/),  
+just put ***all categories and images*** in *train* folder and *test* folder. The training set and testing set have been split via *train.txt* and *test.txt*.  
+See the PNG in each folder.
+
+# Backbone CNN
+Please specify the CNN *model_path* in .*models/BN_Inception.py*:
+
+model_path = 'Path to Model/models/bn_inception-52deb4733.pth'
+
+Download the model from [bn_inception-52deb4733](https://drive.google.com/file/d/1qDBfquYrfM9Msl2q57jxzl9w0y7qwnn0/view?usp=sharing)
+
+# Specify path:
+
+Specify the Project path in *train.py*:
+
+Dir_path = 'Path of Project/Deep_Incremental_Retrieval/'
+
+
 
 # Intial training in the first stage
 
-(1) in script *train.py,* set --_Incremental_flag_ to *False*  
-(2) set --*resume* to *None*.
-(3) in script ./Dataset/CUB200.py
+(1), in script *train.py,* set --_Incremental_flag_ to *False*  
+(2), set --*resume* to *None*.
+(3), in script ./Dataset/CUB200.py
  Comment and uncomment:
 
         labels_select = [labels[i] for i in range(len(labels)) if labels[i] <= 99] # 61, 71, 81, 91, 101 for flower-102
@@ -45,7 +68,7 @@ The training epochs (e.g. 2500) in second stage should be greater than that of t
 so the saved student model is named starting from the training epochs in the first stage (e.g. 1500)
 
 If the remaining classes on a considered dataset are added at once, there are only two stages. Because all new classes are added
-at once, there is no feature estimation involved, so in the *train.py*: *sequential_inteplatation = False*.   
+at once, there is no feature estimation involved, so in the *train.py*: *sequential_inteplatation = False*.
 
 If added in different groups successively, the second stage is *repeated* until all remaining classes
 are added. Unfortunately, in this case, I didn't make it train in an end-to-end way.
@@ -56,7 +79,7 @@ random_samp = np.random.uniform(low=-0.0442811, high=0.2230079, size=(embed_feat
 
 in *trainer.py.*
 
-At the same time, set  
+At the same time, set
 
 *sequential_inteplatation = True*
 
@@ -65,19 +88,19 @@ in *trainer.py.*
 
 
 # Acknowledgement
-Thanks for the code release from WangXun from: https://github.com/bnu-wangxun/Deep_Metric  
+Thanks for the code release from WangXun from: https://github.com/bnu-wangxun/Deep_Metric
 if use this code, please consider citing the papers:
 
 @article{chen2021feature,  
   title={Feature Estimations based Correlation Distillation for Incremental Image Retrieval},  
-  author={Wei Chen and Yu Liu and Nan Pu and Weiping Wang and Li Liu and Lew Michael S},  
+  author={Wei Chen and Yu Liu and Nan Pu and Weiping Wang and Li Liu and Lew, Michael S},  
   journal={IEEE Transactions on Multimedia},  
   year={2021},  
 }
 
 @inproceedings{wang2019multi,  
 title={Multi-Similarity Loss with General Pair Weighting for Deep Metric Learning},  
-author={Wang Xun and Han Xintong, Huang Weilin and Dong Dengke and Scott Matthew R},  
+author={Wang, Xun and Han, Xintong and Huang, Weilin and Dong, Dengke and Scott, Matthew R},  
 booktitle={CVPR},  
 year={2019}  
 }

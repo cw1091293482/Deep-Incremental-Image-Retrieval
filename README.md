@@ -65,7 +65,7 @@ in *trainer.py.*
 
 
 # Acknowledgement
-Thanks for the code release from WangXun from: https://github.com/bnu-wangxun/Deep_Metric
+Thanks for the code release from WangXun from: https://github.com/bnu-wangxun/Deep_Metric  
 if use this code, please consider citing the papers:
 
 @article{chen2021feature,  

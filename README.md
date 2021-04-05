@@ -19,7 +19,7 @@ Please specify the CNN *model_path* in .*models/BN_Inception.py*:
 
 model_path = 'Path to Model/models/bn_inception-52deb4733.pth'
 
-Download the model from [bn_inception-52deb4733](https://drive.google.com/file/d/1qDBfquYrfM9Msl2q57jxzl9w0y7qwnn0/view?usp=sharing)
+Download the model from [bn_inception-52deb4733](https://drive.google.com/file/d/1qDBfquYrfM9Msl2q57jxzl9w0y7qwnn0/view?usp=sharing).
 
 # Specify path:
 

@@ -7,5 +7,5 @@ Before create a new environment via the file environment.yml, just use your own 
 
 # Intial training in the first stage
 
-1, In script train.py, set --Incremental_flag to False 
-2, set --resume to None.
+(1), In script train.py, set --Incremental_flag to False  
+(2), set --resume to None.  

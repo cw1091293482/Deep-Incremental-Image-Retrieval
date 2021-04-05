@@ -7,7 +7,7 @@ Pytorch=1.4.0
 
 # About datasets
 
-In folder *data*, two datasets are named as *CUB_200_2011* and *Stanforddog120*, respectively.  
+In folder *data*, two datasets are named as *CUB_200_2011* and *Stanford-dog120*, respectively.  
 Under each folder for each dataset, there are train.txt, test.txt, and two sub-folders to include training images and test images,  
 When you have download [UCSD Birds-200](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) and [Stanford-dogs-120](http://vision.stanford.edu/aditya86/ImageNetDogs/),  
 just put ***all categories and images*** into the *./train/* folder and *./test/* folder. The training set and testing set have been split via *./train.txt* and *./test.txt*.  

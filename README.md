@@ -75,7 +75,7 @@ are added. Unfortunately, in this case, I didn't make it train in an end-to-end 
 Therefore, when you are using the feature estimation method, the hyper-parameter *accuracy change* needs to be calculated and added manually to
 the following code:
 
-random_samp = np.random.uniform(low=-0.0442811, high=0.2230079, size=(embed_feat_frozen.shape[0], embed_feat_frozen.shape[1]))
+random_samp = np.random.uniform(***low=-0.0442811***, ***high=0.2230079***, size=(embed_feat_frozen.shape[0], embed_feat_frozen.shape[1]))
 
 in *trainer.py.*
 

@@ -70,14 +70,14 @@ if use this code, please consider citing the papers:
 
 @article{chen2021feature,  
   title={Feature Estimations based Correlation Distillation for Incremental Image Retrieval},  
-  author={Wei Chen and Yu Liu and Nan Pu and Weiping Wang and Li Liu and Lew, Michael S},  
+  author={Wei Chen and Yu Liu and Nan Pu and Weiping Wang and Li Liu and Lew Michael S},  
   journal={IEEE Transactions on Multimedia},  
   year={2021},  
 }
 
 @inproceedings{wang2019multi,  
 title={Multi-Similarity Loss with General Pair Weighting for Deep Metric Learning},  
-author={Wang, Xun and Han, Xintong and Huang, Weilin and Dong, Dengke and Scott, Matthew R},  
+author={Wang Xun and Han Xintong, Huang Weilin and Dong Dengke and Scott Matthew R},  
 booktitle={CVPR},  
 year={2019}  
 }
